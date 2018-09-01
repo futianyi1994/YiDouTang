@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yidoutangdemo.ui.KanTuActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FDB934">
+        <ImageView
+            android:id="@+id/activity_kan_tu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"/>
+        <TextView
+            android:layout_toRightOf="@id/activity_kan_tu_back"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/activity_kan_tu_textviewId"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:text="看图"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/activity_kan_tu_swipeRefreshLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_kan_tu_recyclerViewId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:background="#99FFE36B">
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/icon_filter_result"/>
+            <TextView
+                android:id="@+id/activity_kan_tu_textViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

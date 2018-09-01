@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.yidoutangdemo.ui.XiangqingActivityi"
+    tools:showIn="@layout/activity_xiangqing_activityi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            >
+            <TextView
+                android:id="@+id/activity_xiangqing_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/activity_xiangqing_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_xiangqing_textview1"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </RelativeLayout>
+        <WebView
+            android:id="@+id/activity_xiangqing_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        </WebView>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

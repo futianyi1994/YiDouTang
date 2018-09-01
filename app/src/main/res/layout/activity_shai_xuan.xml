@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yidoutangdemo.ui.ShaiXuanActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FDB934">
+        <ImageView
+            android:id="@+id/activity_shaixuan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/abc_ic_ab_back_mtrl_am_alpha"/>
+        <TextView
+            android:layout_toRightOf="@id/activity_shaixuan_back"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/activity_shaixuan_textviewId"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:text="筛选"/>
+
+        <ImageView
+            android:id="@+id/activity_shaixuan_ok"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_menu_ok"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/activity_shaixuan_listviewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

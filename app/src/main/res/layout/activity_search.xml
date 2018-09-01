@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yidoutangdemo.ui.SearchActivity">
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FDB934"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/activity_search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            />
+        <TextView
+            android:layout_toRightOf="@id/activity_search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/activity_serach_tabLayoutId"
+        android:layout_width="match_parent"
+        android:background="#FDB934"
+        android:layout_height="50dp"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabTextColor="#dddddd"
+        app:tabSelectedTextColor="@android:color/white"
+        >
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_serach_viewPagerId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

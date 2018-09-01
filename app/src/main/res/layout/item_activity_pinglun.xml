@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/item_activity_pinglun_imageviewId"
+        android:layout_width="40dp"
+        android:layout_margin="5dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="40dp" />
+    <TextView
+        android:layout_toRightOf="@id/item_activity_pinglun_imageviewId"
+        android:id="@+id/item_activity_pinglun_user_name"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:text="user_name"/>
+
+    <ImageView
+        android:id="@+id/item_activity_pinglun_icon_time"
+        android:layout_below="@id/item_activity_pinglun_user_name"
+        android:layout_toRightOf="@id/item_activity_pinglun_imageviewId"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/icon_time"/>
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_margin="5dp"
+        android:id="@+id/item_activity_pinglun_LinearLayoutId"
+        android:layout_toRightOf="@id/item_activity_pinglun_imageviewId"
+        android:layout_below="@id/item_activity_pinglun_icon_time"
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_activity_pinglun_quote_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="quote_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_toRightOf="@id/item_activity_pinglun_imageviewId"
+        android:layout_below="@id/item_activity_pinglun_LinearLayoutId"
+        android:id="@+id/item_activity_pinglun_content"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content"/>
+
+    <TextView
+        android:layout_toRightOf="@id/item_activity_pinglun_icon_time"
+        android:layout_below="@id/item_activity_pinglun_user_name"
+        android:padding="5dp"
+        android:id="@+id/item_activity_pinglun_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="created"/>
+    <TextView
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/item_activity_pinglun_feedback_TextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回复"/>
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_feedback"
+        android:layout_toLeftOf="@id/item_activity_pinglun_feedback_TextViewId"
+        android:id="@+id/item_activity_pinglun_feedback_imageviewId"/>
+
+</RelativeLayout>

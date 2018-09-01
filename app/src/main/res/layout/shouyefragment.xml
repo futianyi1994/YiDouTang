@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/shouyefragment_TabId"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/shouyefragment_radioGroupId"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="5dp"
+                android:text="推荐"
+                android:textColor="#000" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="5dp"
+                android:textColor="#aaa"
+                android:text="最新" />
+        </RadioGroup>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/shouyefragment_LinearLayoutId"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+            <Button
+                android:id="@+id/pinterest_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/selector_pinterest" />
+
+            <Button
+                android:id="@+id/linear_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_linear" />
+
+            <Button
+                android:id="@+id/photo_filter_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/selector_photo_filter" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/shouyefragment_nullLinearLayoutId"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shouyefragment_viewPagerId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shouyefragment_TabId">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

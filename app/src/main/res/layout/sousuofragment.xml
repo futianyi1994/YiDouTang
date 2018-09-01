@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="#FDB934"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门搜索"/>
+    </LinearLayout>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        app:max_select="1"
+        android:id="@+id/item_sousuo_remen_flowlayoutId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="#FDB934"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="历史搜索"/>
+        <LinearLayout
+            android:id="@+id/clear"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_clear"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:text="清空"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.zhy.view.flowlayout.TagFlowLayout
+        app:max_select="1"
+        android:id="@+id/item_sousuo_lishi_flowlayoutId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+</LinearLayout>
